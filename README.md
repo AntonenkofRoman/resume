@@ -2,3 +2,4 @@
 
 ## Делал..и даже разбирался сам
 
+[Kinglet первая работа](https://antonenkofroman.github.io/resume/)
