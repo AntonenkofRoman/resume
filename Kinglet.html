@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="kingletcss.css">
+    <title>Kinglet</title>
 </head>
 <body>
-    <img src="kinglet.jpg" alt="лого компании">
+    <div class="conteiner">
+    <div class="info">
+    <img src="kinglet.jpg" alt="лого компании" class="avatar">
+    <div class="info-text">
     <h1>Реставрационная компания Kinglet</h1>
     <p>Наша фирма специализируется на реставрации произведениий искусств <strong> <em> Иконы, холсты</em></strong></p>
     <p>Большой опыт. более 15 лет на рынке. большое колличество довольных клиентов</p>
@@ -15,77 +19,80 @@
 <h4>Найти вы нас сможете в соцеальных сетях</h4>
 <a href="https://t.me/AntonenkofRoman" target="_blank">Telegram</a> | 
 <a href="https://www.instagram.com/roman.antonenkof" target="_blank">Instargam</a>
-<h2>Список того чего мы делаем</h2>
-<ol>
-    <li>Укрепление </li>
-    <li>Расчитска</li>
-    <li>Восполнение утрат</li>
-    <li>Тонировки</li>
-    <li>Покрітия изолировочнім слоем лака</li>
-</ol>
-<h4>Опыт Работы</h4>
-<table>
-<thead>
+</div>
+</div>
+<div class="card bg-green">
+    <h2>Список того чего мы делаем</h2>
+        <ol class="list">
+            <li>Укрепление </li>
+            <li>Расчитска</li>
+            <li>Восполнение утрат</li>
+            <li>Тонировки</li>
+            <li>Покрітия изолировочнім слоем лака</li>
+        </ol>
+</div>
+<div class="card bg-red">
+<h2>Опыт Работы</h2>
+<table class="table">
+<!-- <thead>
     <tr>
     <th>название</th>
     <th>место</th>
     <th>год</th>
     </tr>  
-</thead>
-<tbody>
-    <tr>
-        <td>Золочение бордюров</td>
-        <td>Благовещенский собор</td>
-        <td>2021</td>
-    </tr>
-    <tr>
-        <td>Роспись каплычки</td>
-        <td>Черкашские тишки </td>
-        <td>2021</td>
-    </tr>
-    <tr>
-        <td>Реставрация икон</td>
-        <td>Высокий </td>
-        <td>2003-наше время</td>
-    </tr>
-    <tr>
-        <td>Реставрация холстов</td>
-        <td>Высокий </td>
-        <td>2003-наше время</td>
-    </tr>
-</tbody>
-</table>
-<h4>Если вас заинтересовало</h4>
-<h4>Связь с нами</h4>
-<form >
-    <div>
-    <label for="text">Введите имя</label>
-    <input type="text" id="text">
-</div>
-<div>
-    <label for="email">Ваш Email</label>
-    <input type="email" id="email" placeholder="Введите Email">
-    <!-- placeholder это подсказка -->
-</div>
-<div>
-    <label for="number">Кол-во икон</label>
-    <input type="number" id="number" min="0">
-</div>
-
-<div>
-    <label>колличество работ</label>
-    <input type="checkbox" name="icon"> KazanMotherofGod
-    <input type="checkbox" name="icon"> NewTestamentTrinity
-    <input type="checkbox" name="icon"> OldTestamenttrinity
-    <input type="checkbox" name="icon"> Manysaints
-</div>
-
-<button type="sumbit">отправить форму</button>
+</thead> -->
+    <tbody>
+        <tr>
+            <td>Золочение бордюров</td>
+            <td>Благовещенский собор</td>
+            <td>2021</td>
+        </tr>
+        <tr>
+            <td>Роспись каплычки</td>
+            <td>Черкашские тишки </td>
+            <td>2021</td>
+        </tr>
+        <tr>
+            <td>Реставрация икон</td>
+            <td>Высокий </td>
+            <td>2003-наше время</td>
+        </tr>
+        <tr>
+            <td>Реставрация холстов</td>
+            <td>Высокий </td>
+            <td>2003-наше время</td>
+        </tr>
+    </tbody>
+    </table>
+    </div>
+    <div class="card bg-yellow">
    
+    <form action="/" class="form">
+        <h2>Если вас заинтересовало cвяжитесь с нами</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="text">Ваше имя</label>
+                    <input type="text" id="text" placeholder="Введите имя">
+                </div>
+        <div class="form-group">
+            <label for="email">Ваш Email</label>
+            <input type="email" id="email" placeholder="Введите Email">
+            <!-- placeholder это подсказка -->
+        </div>
+    </div>
+    <div class="form-group">
+<label for="message">Ваше сообщение</label>
+ 
+ <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+</div>
 
-<div>
-    <label for="date">Записаться на консультацию</label>
-    <input type="date" id="date">
+  
+    <br>
+    <!-- <button  class="btn" type="sumbit">отправить форму</button> -->
+   <input class="btn" type="sumbit" value="Отправить!">
+   <!-- <button class="btn">ты кнопка</button> -->
+</div>
+</div>
 </div>
 </form>
 </body>
